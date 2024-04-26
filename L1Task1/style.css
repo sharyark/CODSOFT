@@ -1,0 +1,288 @@
+/* Set base font family and reset margin and padding for all elements */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* body container give some margin  */
+
+.containerbody{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+/* Header styling */
+header {
+    background: #fff; /* Change background color to white */
+    color: #000; /* Change text color to black */
+    padding: 20px 0; /* Add padding */
+}
+
+/* Logo styling */
+.logo {
+    float: left; /* Float the logo to the left */
+}
+
+/* Reset margin for logo heading */
+.logo h1 {
+    margin: 0;
+}
+
+/* Navigation styling */
+nav {
+    float: right; /* Float the navigation to the right */
+}
+
+/* Reset list styles for navigation links */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for navigation links */
+nav ul li {
+    display: inline; /* Display links horizontally */
+    margin-left: 20px; /* Add left margin between links */
+}
+
+/* Link styling */
+nav ul li a {
+    color: #000; /* Change text color to black */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add padding */
+    transition: all 0.3s ease; /* Add transition effect */
+}
+
+/* Link hover effect */
+nav ul li a:hover {
+    border-radius: 10px;
+
+    background-color: #000; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Flexbox styling for main content container */
+.containerA {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly across the container */
+}/* About section container */
+.containerB {
+    margin: auto;
+    margin-top: 60px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between;
+}
+
+/* About section paragraph */
+.about-text {
+    width: 50%; /* Set width for paragraph */
+    padding-right: 20px; /* Add right padding */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* About section image container */
+.about-image {
+    width: 50%; /* Set width for image container */
+}
+
+/* About section image */
+.about-image img {
+    width: 100%; /* Make image fill its container */
+    border-radius: 20%; /* Add border radius for rounded shape */
+   }
+.about-heading{
+    margin-top: -200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ----------skill css ------------*/
+
+
+/* Skill item */
+.skills-container
+{
+    margin-top: 100px;
+}
+
+.skills-list li {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Add bottom margin between skill items */
+}
+
+/* Skill name */
+.skill-name {
+    width: 100px; /* Set width for skill name */
+    margin-right: 700px; /* Add space between name and bar */
+}
+
+/* Skill bar */
+.skill-bar {
+    flex-grow: 1; /* Allow bar to grow and fill remaining space */
+    background-color: #f0f0f0; /* Background color for skill bar */
+    height: 10px; /* Set height for skill bar */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Skill level */
+.skill-level {
+    height: 100%; /* Set height to fill skill bar */
+    transition: width 1s ease; /* Add transition effect */
+}
+
+/* Skill levels */
+.react {
+    width: 70%; /* Set width based on skill level */
+    background-color: #4CAF50; /* Green color for HTML skill */
+}
+
+.fastapi {
+    width: 60%; /* Set width based on skill level */
+    background-color: #2196F3; /* Blue color for CSS skill */
+}
+
+.django {
+    width: 50%; /* Set width based on skill level */
+    background-color: #f44336; /* Red color for JavaScript skill */
+}
+
+.arduino {
+    width: 60%; /* Set width based on skill level */
+    background-color: yellow; /* Red color for JavaScript skill */
+}
+/* ----project section   */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  #projects{
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  .project {
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project h3 {
+    margin-top: 0;
+  }
+  
+  .project p {
+    margin-bottom: 10px;
+  }
+  
+  .project img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .project {
+      width: 100%;
+    }
+  }
+  
+  /* ---------- Resume section ------*/
+
+.resume-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    border-radius: 5px;
+  }
+  
+  .resume-container {
+    text-align: center;
+  }
+  
+  .resume-heading {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .resume-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .resume-download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .resume-download-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* contact section */
+
+
+  /* Style for contact section */
+.contact-section {
+    background-color: white;
+    padding: 40px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-details {
+    flex: 1;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .additional-info p {
+    font-size: 16px;
+    color: #777;
+    font-size: x-large;
+  }
+  
+  .contact-image {
+    flex: 1;
+    text-align: center;
+
+  }
+  
+  .contact-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 250px;
+
+  }
+  
